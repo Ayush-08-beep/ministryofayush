@@ -117,3 +117,48 @@ footer {
     font-size: 0.95em;
     margin-top: 2em;
 }
+
+nav {
+    display: flex;
+    justify-content: flex-end;   /* buttons pushed right */
+    align-items: center;
+    background: #00796b;
+    color: white;
+    padding: 1em 2em;
+    position: relative;          /* for nav-center absolute positioning */
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0; right: 0;           /* span full nav width */
+    justify-content: center;     /* center horizontally */
+    pointer-events: none;        /* let clicks pass through */
+}
+
+.nav-center * {
+    pointer-events: auto;
+}
+
+.logo {
+    display: inline-block;
+    border: 2px solid white;
+    padding: 0.4em 1em;
+    margin-right: 1em;
+    font-weight: bold;
+    background: #00675b;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+.site-title {
+    font-size: 2em;
+    letter-spacing: 4px;
+    margin-left: 0.7em;
+    font-weight: 500;
+}
+
+.nav-right {
+    display: flex;
+    gap: <span class="ml-2" /><span class="inline-block w-3 h-3 rounded-full bg-neutral-a12 align-middle mb-[0.1rem]" />
