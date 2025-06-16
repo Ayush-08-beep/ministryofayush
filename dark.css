@@ -1,26 +1,49 @@
 body.dark {
-    background: #21252b;
-    color: #eee;
+    background: #181a1b;
+    color: #e2e2e2;
 }
-body.dark main {
-    background: #292d34;
-}
+
 body.dark nav {
-    background: #263238;
-}
-body.dark .links-bar {
-    background: #37474f;
-}
-body.dark footer {
-    background: #263238;
-}
-body.dark a {
-    color: #81d4fa;
-}
-body.dark .nav-btn,
-body.dark .contact-section button,
-body.dark .easter-egg-section button {
-    background: #37474f;
+    background: #24292f;
     color: #fff;
 }
 
+body.dark .nav-btn {
+    background: #333c4a;
+    color: #eee;
+}
+
+body.dark .links-bar {
+    background: #20232a;
+    color: #e2e2e2;
+}
+body.dark .links-bar a {
+    color: #80e8ff;
+}
+
+body.dark main {
+    background: #23272e;
+    color: #e2e2e2;
+}
+
+body.dark .contact-section input,
+body.dark .contact-section textarea {
+    background: #15191e;
+    color: #e2e2e2;
+    border: 1px solid #444f5a;
+}
+
+body.dark .contact-section button {
+    background: #00796b;
+    color: #fff;
+}
+
+body.dark .easter-egg-section button {
+    background: #ff8a65;
+    color: #fff;
+}
+
+body.dark footer {
+    background: #15191e;
+    color: #afafaf;
+}

@@ -1,6 +1,5 @@
-// CSV PARSING for Audio Easter Egg
+// AUDIO EASTER EGG -- UNCHANGED
 let playlist = [];
-
 Papa.parse('playlist.csv', {
     download: true,
     header: true,
@@ -12,7 +11,6 @@ Papa.parse('playlist.csv', {
         );
     }
 });
-
 document.getElementById('audio-easter-egg').onclick = function() {
     if (playlist.length === 0) {
         document.getElementById('random-song').textContent = 'Playlist is loading or empty.';
@@ -27,14 +25,7 @@ document.getElementById('audio-easter-egg').onclick = function() {
         `Random Song: <a href="${url}" target="_blank">${pick['Track Name']}</a>`;
 };
 
-// DARK MODE TOGGLE
-const darkToggle = document.getElementById('dark-mode-toggle');
-const darkCss = document.getElementById('dark-style');
-
-darkToggle.onclick = function() {
-    if (darkCss.disabled) {
-        darkCss.disabled = false;
-    } else {
-        darkCss.disabled = true;
-    }
+// DARK MODE TOGGLE -- THE KEY PART!
+document.getElementById('dark-mode-toggle').onclick = function() {
+    document.body.classList.toggle('dark');
 };
