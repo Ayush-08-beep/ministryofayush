@@ -207,3 +207,38 @@ nav {
     padding: 0.3em 0.8em;
   }
 }
+
+.easter-egg-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff7ee;
+    box-shadow: 0 4px 14px rgba(255,170,0,0.07);
+    padding: 2em 1em 1.5em 1em;
+    border-radius: 14px;
+    margin: 2em auto;
+    max-width: 420px;
+    min-width: 220px;
+}
+
+.easter-egg-section button {
+    background: linear-gradient(90deg, #ffb184 0%, #ff8a65 100%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: none;
+    padding: 0.9em 2.1em;
+    border-radius: 10px;
+    margin-bottom: 1.3em;
+    box-shadow: 0 2px 8px rgba(252, 153, 52, 0.11);
+    transition: background 0.17s, transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+}
+.easter-egg-section button:hover,
+.easter-egg-section button:focus {
+    background: linear-gradient(90deg, #ff9a59 0%, #ff682a 100%);
+    transform: translateY(-2px) scale(1.035);
+    box-shadow: 0 4px 14px rgba(252, 153, 52, 0.20);
+}
+
