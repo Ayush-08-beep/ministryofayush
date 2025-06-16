@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ministry of AYUSH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS: Default Light Mode -->
+    <link id="theme-style" rel="stylesheet" href="styles.css">
+    <!-- CSS: Dark Mode (loaded using JS below) -->
+    <link id="dark-style" href="dark.css" rel="stylesheet" disabled>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo">LOGO</div>
+            <span class="site-title">MINISTRY OF AYUSH</span>
+        </div>
+        <div class="nav-right">
+            <button class="nav-btn">ABOUT</button>
+            <button class="nav-btn" id="dark-mode-toggle">DARK MODE</button>
+        </div>
+    </nav>
+
+    <section class="links-bar">
+        <strong>links:</strong>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Spotify</a>
+        <a href="#">Discord</a>
+        <a href="#">Last.fm</a>
+    </section>
+
+    <main>
+        <section class="contact-section">
+            <h2>Contact Minister Ayush</h2>
+            <form>
+                <label>Name:<br>
+                    <input type="text" name="name" required>
+                </label><br>
+                <label>Email:<br>
+                    <input type="email" name="email" required>
+                </label><br>
+                <label>Reason:<br>
+                    <textarea name="reason" required></textarea>
+                </label><br>
+                <button type="submit">Submit to the Healing Bureaucracy</button>
+            </form>
+        </section>
+
+        <section class="easter-egg-section">
+            <button id="audio-easter-egg" type="button">Audio Easter Egg</button>
+            <span id="random-song"></span>
+        </section>
+
+        <section class="initiatives-section">
+            <h2>Ministry Initiatives</h2>
+            <ol>
+                <li><a href="#">Playlist 1</a></li>
+                <li><a href="#">Playlist 2</a></li>
+                <li><a href="#">Playlist 3</a></li>
+            </ol>
+        </section>
+
+        <section class="faq-section">
+            <h2>FAQ</h2>
+            <ol>
+                <li>What is AYUSH?</li>
+                <li>How do I contact the minister?</li>
+                <li>Where can I listen to the playlists?</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Ministry of AYUSH
+    </footer>
+
+    <!-- PapaParse for CSV parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

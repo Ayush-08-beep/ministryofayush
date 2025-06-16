@@ -1,0 +1,26 @@
+body.dark {
+    background: #21252b;
+    color: #eee;
+}
+body.dark main {
+    background: #292d34;
+}
+body.dark nav {
+    background: #263238;
+}
+body.dark .links-bar {
+    background: #37474f;
+}
+body.dark footer {
+    background: #263238;
+}
+body.dark a {
+    color: #81d4fa;
+}
+body.dark .nav-btn,
+body.dark .contact-section button,
+body.dark .easter-egg-section button {
+    background: #37474f;
+    color: #fff;
+}
+
