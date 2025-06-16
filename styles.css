@@ -29,6 +29,16 @@ nav {
     font-weight: bold;
     background: #00675b;
     border-radius: 8px;
+} /* <-- Closing brace here! */
+
+.logo img,
+.logo svg {
+    display: block;
+    margin: 0 auto;
+    /* Adjust the size as needed: */
+    height: 38px;
+    width: auto;
+    max-width: 38px;
 }
 
 .site-title {
@@ -52,6 +62,7 @@ nav {
 }
 
 .links-bar {
+    text-align: center;
     background: #e0f7fa;
     padding: 0.7em 2em;
     font-size: 1em;
