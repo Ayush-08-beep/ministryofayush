@@ -4,6 +4,11 @@ body {
     color: #222;
     margin: 0;
     padding: 0;
+    background-image: url('background.png');  /* Path to your image */
+    background-size: cover;                  /* Ensures the image covers the whole area */
+    background-position: center;             /* Centers the image */
+    background-repeat: no-repeat;            /* Prevents tiling of an image */
+    background-attachment: fixed;            /* Keeps the image fixed on scroll */
 }
 
 nav {
