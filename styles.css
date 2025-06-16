@@ -8,17 +8,24 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
-    background: #00796b;
-    color: white;
+    justify-content: flex-end;
     align-items: center;
+    background: #a93db7;
+    color: white;
     padding: 1em 2em;
+    position: relative;
 }
 
-.site-title, h1, h2, h3 {
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.03em;
+.nav-center {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0; right: 0;
+    justify-content: center;
+    pointer-events: none;
+}
+.nav-center * {
+    pointer-events: auto;
 }
 
 .logo {
@@ -27,27 +34,37 @@ nav {
     padding: 0.4em 1em;
     margin-right: 1em;
     font-weight: bold;
-    background: #949494;
+    background: #797979;
     border-radius: 8px;
-} /* <-- Closing brace here! */
-
+    font-size: 1.5em;
+}
 .logo img,
 .logo svg {
     display: block;
     margin: 0 auto;
-    /* Adjust the size as needed: */
     height: 55px;
     width: auto;
     max-width: 55px;
 }
 
+.site-title, h1, h2, h3 {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
 .site-title {
-    font-size: 1.5em;
-    letter-spacing: 2px;
+    font-size: 2em;
+    letter-spacing: 4px;
+    margin-left: 0.7em;
+    font-weight: 500;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1em;
 }
 
 .nav-btn {
-    margin-left: 1em;
     background: #5900bf;
     border: none;
     color: #fff;
@@ -58,20 +75,25 @@ nav {
     transition: background 0.2s;
 }
 .nav-btn:hover {
-    background: #5900bf;
+    background: #4a009c;
 }
 
 .links-bar {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
     background: #e0f7fa;
     padding: 0.7em 2em;
     font-size: 1em;
+    text-align: center;
 }
 .links-bar a {
-    margin: 0 1em;
     color: #09918c;
     text-decoration: none;
     font-weight: bold;
+    margin: 0 0.5em;
 }
 .links-bar a:hover {
     text-decoration: underline;
@@ -109,21 +131,62 @@ section {
     cursor: pointer;
 }
 
+.easter-egg-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff7ee;
+    box-shadow: 0 4px 14px rgba(255, 170, 0, 0.07);
+    padding: 2em 1.5em 1.5em 1.5em;
+    border-radius: 14px;
+    margin: 2em auto;
+    max-width: 420px;
+    min-width: 220px;
+}
+.audio-icon {
+    font-size: 2.5em;
+    margin-bottom: 0.7em;
+    color: #ff8a65;
+}
 .easter-egg-section button {
-    background: #3f9b58;
+    background: linear-gradient(90deg, #ffb184 0%, #ff8a65 100%);
     color: #fff;
     font-weight: bold;
+    font-size: 1.2em;
     border: none;
-    padding: 0.7em 1.2em;
-    border-radius: 6px;
+    padding: 0.9em 2.1em;
+    border-radius: 10px;
+    margin-bottom: 1.3em;
+    box-shadow: 0 2px 8px rgba(252, 153, 52, 0.11);
+    transition: background 0.17s, transform 0.15s, box-shadow 0.15s;
     cursor: pointer;
-    margin-bottom: 1em;
+    letter-spacing: 0.01em;
 }
-
-.easter-egg-section #random-song {
+.easter-egg-section button:hover,
+.easter-egg-section button:focus {
+    background: linear-gradient(90deg, #ff9a59 0%, #ff682a 100%);
+    transform: translateY(-2px) scale(1.035);
+    box-shadow: 0 4px 14px rgba(252, 153, 52, 0.20);
+}
+#random-song {
     display: block;
-    margin-top: 1em;
+    margin-top: 1.1em;
+    font-size: 1.1em;
     font-style: italic;
+    color: #444;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+#random-song a {
+    color: #1976d2;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #ffb184;
+    transition: color 0.2s;
+}
+#random-song a:hover {
+    color: #ff682a;
 }
 
 footer {
@@ -134,51 +197,6 @@ footer {
     font-size: 0.95em;
     margin-top: 2em;
 }
-
-nav {
-    display: flex;
-    justify-content: flex-end;   /* buttons pushed right */
-    align-items: center;
-    background: #a93db7;
-    color: white;
-    padding: 1em 2em;
-    position: relative;          /* for nav-center absolute positioning */
-}
-
-.nav-center {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 0; right: 0;           /* span full nav width */
-    justify-content: center;     /* center horizontally */
-    pointer-events: none;        /* let clicks pass through */
-}
-
-.nav-center * {
-    pointer-events: auto;
-}
-
-.logo {
-    display: inline-block;
-    border: 2px solid white;
-    padding: 0.4em 1em;
-    margin-right: 1em;
-    font-weight: bold;
-    background: #797979;
-    border-radius: 8px;
-    font-size: 1.5em;
-}
-
-.site-title {
-    font-size: 2em;
-    letter-spacing: 4px;
-    margin-left: 0.7em;
-    font-weight: 500;
-}
-
-.nav-right {
-    display: flex;
-    gap: <span class="ml-2" /><span class="inline-block w-3 h-3 rounded-full bg-neutral-a12 align-middle mb-[0.1rem]" />
 
 @media (max-width: 700px) {
   nav {
@@ -206,39 +224,10 @@ nav {
     margin: 0 0.5em 0 0;
     padding: 0.3em 0.8em;
   }
-}
 
-.easter-egg-section {
-    display: flex;
+  .links-bar {
     flex-direction: column;
-    align-items: center;
-    background: #fff7ee;
-    box-shadow: 0 4px 14px rgba(255,170,0,0.07);
-    padding: 2em 1em 1.5em 1em;
-    border-radius: 14px;
-    margin: 2em auto;
-    max-width: 420px;
-    min-width: 220px;
+    gap: 0.4em;
+    padding: 0.6em 0.3em;
+  }
 }
-
-.easter-egg-section button {
-    background: linear-gradient(90deg, #ffb184 0%, #ff8a65 100%);
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2em;
-    border: none;
-    padding: 0.9em 2.1em;
-    border-radius: 10px;
-    margin-bottom: 1.3em;
-    box-shadow: 0 2px 8px rgba(252, 153, 52, 0.11);
-    transition: background 0.17s, transform 0.15s, box-shadow 0.15s;
-    cursor: pointer;
-    letter-spacing: 0.01em;
-}
-.easter-egg-section button:hover,
-.easter-egg-section button:focus {
-    background: linear-gradient(90deg, #ff9a59 0%, #ff682a 100%);
-    transform: translateY(-2px) scale(1.035);
-    box-shadow: 0 4px 14px rgba(252, 153, 52, 0.20);
-}
-
