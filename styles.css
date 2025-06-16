@@ -48,9 +48,9 @@ nav {
 .logo svg {
     display: block;
     margin: 0 auto;
-    height: 55px;
+    height: 75px;
     width: auto;
-    max-width: 55px;
+    max-width: 75px;
 }
 
 .site-title, h1, h2, h3 {
@@ -90,13 +90,13 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     gap: 1em;
-    background: #e0f7fa;
+    background: #3ce8f71d;
     padding: 0.7em 2em;
     font-size: 1em;
     text-align: center;
 }
 .links-bar a {
-    color: #09918c;
+    color: #00f7ff;
     text-decoration: none;
     font-weight: bold;
     margin: 0 0.5em;
@@ -108,7 +108,7 @@ nav {
 main {
     max-width: 800px;
     margin: 2em auto;
-    background: #fff;
+    background: #ffffff1b;
     padding: 2em;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
@@ -141,7 +141,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff7ee;
+    background: #fff7ee1a;
     box-shadow: 0 4px 14px rgba(255, 170, 0, 0.07);
     padding: 2em 1.5em 1.5em 1.5em;
     border-radius: 14px;
