@@ -115,7 +115,16 @@ main {
 }
 
 section {
+    background: #c1a9ff4a;
+    padding: 2em 1.5em;
     margin-bottom: 2em;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(89, 0, 191, 0.04);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transition: box-shadow 0.2s;
 }
 
 .contact-section input,
@@ -194,6 +203,40 @@ section {
 #random-song a:hover {
     color: #ff682a;
 }
+
+#about {
+    background: #ce9dff72;
+    border-left: 6px solid #5900bf;
+    margin-bottom: 2em;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(89,0,191,0.06);
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 1.5em;
+}
+#about h2 {
+    color: #5900bf;
+    margin-top: 0;
+}
+
+/* Initiatives Section */
+.initiatives-section {
+    background: #8effea6f;
+    border-left: 6px solid #09918c;
+}
+.initiatives-section ol {
+    padding-left: 1.5em;
+}
+.initiatives-section a {
+    color: #09918c;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+.initiatives-section a:hover {
+    color: #5900bf;
+}
+
 
 footer {
     background: #eeeeee;
