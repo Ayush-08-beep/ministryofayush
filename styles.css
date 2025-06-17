@@ -282,3 +282,29 @@ footer {
     padding: 0.6em 0.3em;
   }
 }
+
+#random-song, 
+.overlay-text {
+  display: inline-block;
+  background: rgba(0,0,0,0.60);     /* dark semi-transparent bg */
+  color: #fff;
+  padding: 0.35em 0.95em;
+  border-radius: 0.4em;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+}
+
+#random-song a, 
+.overlay-text a {
+  color: #ffe073;
+  text-decoration: underline;
+  transition: color 0.15s;
+  font-style: italic;
+  font-weight: bold;
+}
+#random-song a:hover,
+.overlay-text a:hover {
+  color: #fff7ae;
+}
