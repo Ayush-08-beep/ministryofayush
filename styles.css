@@ -40,7 +40,7 @@ nav {
     padding: 0.4em 1em;
     margin-right: 1em;
     font-weight: bold;
-    background: url('logo.png') center object-fit/cover no-repeat,
+    background: url('logo.png') center stretch/cover no-repeat,
         #fffbe9;
     border-radius: 8px;
     font-size: 1.5em;
