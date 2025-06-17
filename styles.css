@@ -37,13 +37,9 @@ nav {
 .logo {
     display: inline-block;
     border: 2px solid white;
-    padding: 0.4em 1em;
-    margin-right: 1em;
     font-weight: bold;
     background: url('logo.png') center stretch/cover no-repeat,
-        #fffbe9;
-    border-radius: 8px;
-    font-size: 1.5em;
+        #fffbe900;
 }
 
 .site-title, h1, h2, h3 {
