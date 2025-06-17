@@ -150,7 +150,9 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff7ee1a;
+    background: 
+        url('chart.png') center center/cover no-repeat,
+        #fffbe9;
     box-shadow: 0 4px 14px rgba(255, 170, 0, 0.07);
     padding: 2em 1.5em 1.5em 1.5em;
     border-radius: 14px;
@@ -229,7 +231,7 @@ section {
     padding-left: 1.5em;
 }
 .initiatives-section a {
-    color: #09918c;
+    color: #ff7a7a;
     font-weight: 600;
     transition: color 0.2s;
 }
