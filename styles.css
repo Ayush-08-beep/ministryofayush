@@ -43,7 +43,19 @@ nav {
     font-family: 'Cinzel', serif;
     font-weight: 700;
     letter-spacing: 0.03em;
+    color: #ffd700;
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    text-shadow:
+      1px 1px 0 #b35d00,
+      2px 2px 1px #cc8400,
+      3px 3px 2px #cc8400,
+      4px 4px 3px rgba(0,0,0,0.3),
+      5px 5px 4px rgba(0,0,0,0.2);
 }
+
+
 .site-title {
     font-size: 2em;
     letter-spacing: 4px;
@@ -115,6 +127,11 @@ section {
 .initiatives-section ol {
     padding-left: 1.2em;
     margin: 0;
+}
+
+.initiatives-section ol {
+    column-count: 2;
+    column-gap: 2em; /* adjust spacing between columns as needed */
 }
 
 .about li,
@@ -255,6 +272,10 @@ footer {
         padding: 1em 0.8em;
         margin: 1em auto;
         width: 100%;
+    }
+
+    .initiatives-section ol {
+        column-count: 1;
     }
 }
 
