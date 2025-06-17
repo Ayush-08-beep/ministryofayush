@@ -34,13 +34,6 @@ nav {
     pointer-events: auto;
 }
 
-.logo {
-    display: inline-block;
-    border: 2px solid white;
-    font-weight: bold;
-    background: url('logo.png') center stretch/cover no-repeat,
-        #fffbe900;
-}
 
 .site-title, h1, h2, h3 {
     font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
