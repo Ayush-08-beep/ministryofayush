@@ -48,9 +48,9 @@ nav {
 .logo svg {
     display: block;
     margin: 0 auto;
-    height: 75px;
+    height: 100px;
     width: auto;
-    max-width: 75px;
+    max-width: 100px;
 }
 
 .site-title, h1, h2, h3 {
