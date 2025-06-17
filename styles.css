@@ -46,11 +46,10 @@ nav {
 }
 .logo img,
 .logo svg {
+    height: 100%;      /* occupies 90% of the box */
+    width: 100%;
+    object-fit: contain;
     display: block;
-    margin: 0 auto;
-    height: 100px;
-    width: auto;
-    max-width: 100px;
 }
 
 .site-title, h1, h2, h3 {
