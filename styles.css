@@ -40,16 +40,10 @@ nav {
     padding: 0.4em 1em;
     margin-right: 1em;
     font-weight: bold;
-    background: #797979;
+    background: url('logo.png') center object-fit/cover no-repeat,
+        #fffbe9;
     border-radius: 8px;
     font-size: 1.5em;
-}
-.logo img,
-.logo svg {
-    height: 100%;      /* occupies 90% of the box */
-    width: 100%;
-    object-fit: contain;
-    display: block;
 }
 
 .site-title, h1, h2, h3 {
@@ -237,7 +231,22 @@ section {
 .initiatives-section a:hover {
     color: #5900bf;
 }
-
+/* About Section */
+.about {
+    background: #8effea6f;
+    border-left: 6px solid #09918c;
+}
+.about ol {
+    padding-left: 1.5em;
+}
+.about a {
+    color: #ff7a7a;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+.about a:hover {
+    color: #5900bf;
+}
 
 footer {
     background: #eeeeee;
