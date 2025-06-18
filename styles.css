@@ -144,6 +144,11 @@ section {
     word-wrap: break-word;
 }
 
+.underrated ol {
+    column-count: 2;
+    column-gap: 2em; /* adjust spacing between columns as needed */
+}
+
 .contact-section input,
 .contact-section textarea {
     width: 100%;
