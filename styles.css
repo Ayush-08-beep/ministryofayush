@@ -357,3 +357,66 @@ footer {
   text-shadow: 0 1px 2px rgba(0,0,0,0.8);
   box-sizing: border-box;
 }
+
+/* experimental */
+
+/* 1. Add padding to body for spacing */
+body {
+  padding: 16px;
+}
+
+/* 2. Add spacing between tiles */
+.tile {
+  margin-bottom: 20px;
+}
+
+/* 3. Limit image height on mobile */
+.tile img {
+  max-height: 220px;
+  object-fit: cover;
+}
+
+/* 4. Make links touch-friendly */
+.links-bar a {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* 5. Responsive text and layout for small screens */
+@media (max-width: 600px) {
+  h1, h2, h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .tile-title {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .nav-btn,
+  .dark-mode-toggle,
+  .easter-egg-section button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .links-bar a {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+/* 6. Ensure tiles don't overflow */
+.tile {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* 7. Optional: flex layout for vertical content alignment */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
