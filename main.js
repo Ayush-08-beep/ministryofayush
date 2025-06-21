@@ -1,4 +1,4 @@
-// AUDIO EASTER EGG -- UNCHANGED
+// AUDIO EASTER EGG
 let playlist = [];
 Papa.parse('playlist.csv', {
     download: true,
@@ -25,7 +25,7 @@ document.getElementById('audio-easter-egg').onclick = function() {
         `Random Song: <a href="${url}" target="_blank">${pick['Track Name']}</a>`;
 };
 
-// DARK MODE TOGGLE -- THE KEY PART!
+// DARK MODE TOGGLE
 document.getElementById('dark-mode-toggle').onclick = function() {
     document.body.classList.toggle('dark');
 };
