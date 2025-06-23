@@ -1,4 +1,3 @@
-/* Global box-sizing */
 * {
     box-sizing: border-box;
 }
@@ -131,7 +130,7 @@ section {
 
 .initiatives-section ol {
     column-count: 2;
-    column-gap: 2em; /* adjust spacing between columns as needed */
+    column-gap: 2em; 
 }
 
 .about li,
@@ -146,7 +145,7 @@ section {
 
 .underrated ol {
     column-count: 2;
-    column-gap: 2em; /* adjust spacing between columns as needed */
+    column-gap: 2em; 
 }
 
 .contact-section input,
@@ -366,14 +365,14 @@ footer {
   object-fit: cover;
 }
 
-/* Make links touch-friendly */
+/* links for mobile */
 .links-bar a {
   display: block;
   padding: 10px;
   font-size: 18px;
 }
 
-/* 5. Responsive text and layout for small screens */
+/* 5. Responsive - small screens */
 @media (max-width: 600px) {
   h1, h2, h3 {
     font-size: 20px;
@@ -404,7 +403,7 @@ footer {
   border-radius: 12px;
 }
 
-/* Optional: flex layout for vertical content alignment */
+/*flex layout for vertical content alignment */
 .main-container {
   display: flex;
   flex-direction: column;
